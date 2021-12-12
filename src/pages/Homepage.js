@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 const Homepage = () => {
   return (
-    <div className='bgHomeMobile xs:h-screen md:bgHomeTablet xl:bgHomeDesktop'>
+    <div className='bgHomeMobile xs:min-h-screen md:bgHomeTablet xl:bgHomeDesktop'>
       <nav className='mb-16 md:mb-28 xl:mb-[251px]'>
         <Navbar />
       </nav>

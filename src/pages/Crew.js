@@ -47,7 +47,7 @@ const Crew = () => {
   });
 
   return (
-    <div className='bgCMobile md:bgCTablet lg:bgCDesktop h-screen text-center'>
+    <div className='bgCMobile md:bgCTablet lg:bgCDesktop min-h-screen text-center'>
       <nav className='mb-6'>
         <Navbar />
       </nav>

@@ -51,7 +51,7 @@ const Destination = () => {
   });
 
   return (
-    <div className='bgDMobile md:bgDTablet lg:bgDDesktop h-screen text-center'>
+    <div className='bgDMobile md:bgDTablet lg:bgDDesktop w-screen min-h-screen text-center'>
       <nav className='mb-6'>
         <Navbar />
       </nav>
@@ -133,9 +133,7 @@ const Destination = () => {
         <div>
           <div className='text-center px-6 mb-8'>
             <h3 className='text-white uppercase'>{details.name}</h3>
-            <p className='border-b border-gray-400 pb-6'>
-              {details.description}
-            </p>
+            <p className='pb-6'>{details.description}</p>
           </div>
           <div className='mb-8'>
             <p className='subheading2 mb-3'>AVG. DISTANCE</p>

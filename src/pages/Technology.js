@@ -49,7 +49,7 @@ const Technology = () => {
   });
 
   return (
-    <div className='bgTMobile md:bgTTablet lg:bgTDesktop h-screen text-center'>
+    <div className='bgTMobile md:bgTTablet lg:bgTDesktop min-h-screen text-center'>
       <nav className='mb-6 md:mb-10 xl:mb-[26px]'>
         <Navbar />
       </nav>
