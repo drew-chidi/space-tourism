@@ -97,6 +97,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Fetching Data from a JSON File](https://www.pluralsight.com/guides/fetch-data-from-a-json-file-in-a-react-app) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [How To Call Web APIs with the useEffect Hook in React](https://www.digitalocean.com/community/tutorials/how-to-call-web-apis-with-the-useeffect-hook-in-react) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [How To Handle Async Data Loading, Lazy Loading, and Code Splitting with React](https://www.digitalocean.com/community/tutorials/how-to-handle-async-data-loading-lazy-loading-and-code-splitting-with-react) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [How To Deploy React Router Based App On Netlify](https://www.freecodecamp.org/news/how-to-deploy-react-router-based-app-to-netlify/)
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
@@ -113,6 +114,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 - Favour Ohans
--
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
