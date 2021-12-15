@@ -17,6 +17,7 @@ const Technology = () => {
   //   stores button clicks
   const [id, setId] = useState(0);
 
+  let linkId = 3;
   // Image array for small and larger displays
   let imagesPortrait = [vehicleP, capsuleP, spaceportP];
   let imagesLandscape = [vehicleL, capsuleL, spaceportL];
@@ -25,7 +26,7 @@ const Technology = () => {
   const techHandler = (e) => {
     if (e === undefined) {
       setInfo(data[id]);
-      return 0;
+      // return 0;
     } else {
       setId(parseInt(e.target.id));
       setInfo(data[parseInt(e.target.id)]);
@@ -51,7 +52,7 @@ const Technology = () => {
   return (
     <div className='bgTMobile md:bgTTablet lg:bgTDesktop min-h-screen text-center'>
       <nav className='mb-6 md:mb-10 xl:mb-[26px]'>
-        <Navbar />
+        <Navbar id='3' />
       </nav>
       <div className='mb-8 md:mb-14'>
         <h5 className='text-white tracking-[2.7px] text-lg flex justify-center md:justify-start md:pl-10'>

@@ -42,7 +42,8 @@
   }
 }
 
-/* COMPONENTS */
+/* COMPONENTS AND CUSTOM CSS */
+
 @layer components {
   .subheading1 {
     font: 1.75rem "Bellefair";

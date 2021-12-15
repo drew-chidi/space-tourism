@@ -49,7 +49,7 @@ const Crew = () => {
   return (
     <div className='bgCMobile md:bgCTablet lg:bgCDesktop min-h-screen text-center'>
       <nav className='mb-6'>
-        <Navbar />
+        <Navbar id='2' />
       </nav>
       <div className='mb-8'>
         <h5 className='text-white tracking-[2.7px] text-lg flex justify-center'>
