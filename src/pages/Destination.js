@@ -137,12 +137,12 @@ const Destination = () => {
                 <h3 className='text-white uppercase xl:text-[6rem]'>
                   {details.name}
                 </h3>
-                <p className='pb-6 font-light md:tracking-tighter xl:text-[19.5px] xl:leading-10 xl:w-[445px]'>
+                <p className='pb-6 font-light border-b border-gray-600 md:tracking-tighter xl:text-[19.5px] xl:leading-10 xl:w-[445px]'>
                   {details.description}
                 </p>
               </div>
-              <div className='md:flex justify-center xl:justify-start'>
-                <div className='mb-8 justify-self-start md:px-10 xl:mr-10 xl:p-0'>
+              <div className='text-center md:flex justify-center xl:justify-start'>
+                <div className='mb-8  md:px-10 xl:mr-10 xl:p-0'>
                   <p className='subheading2 mb-3'>AVG. DISTANCE</p>
                   <p className='subheading1 uppercase'>{details.distance}</p>
                 </div>
