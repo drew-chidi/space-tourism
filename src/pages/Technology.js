@@ -50,17 +50,16 @@ const Technology = () => {
   });
 
   return (
-    <div className='bgTMobile md:bgTTablet lg:bgTDesktop min-h-screen text-center'>
-      <nav className='mb-6 md:mb-10 xl:mb-[26px]'>
+    <div className='bgTMobile md:bgTTablet lg:bgTDesktop min-h-screen text-center pb-14 md:pb-24'>
+      <nav className='mb-6 md:mb-10 xl:mb-[76px]'>
         <Navbar id='3' />
       </nav>
-      <div className='mb-8 md:mb-14'>
-        <h5 className='text-white tracking-[2.7px] text-lg flex justify-center md:justify-start md:pl-10'>
+      <div className='mb-8 md:mb-14 xl:mb-16'>
+        <h5 className='text-white tracking-[2.7px] text-lg flex justify-center md:justify-start md:pl-10 xl:pl-40'>
           <p className='mr-4 text-gray-500'>03</p> SPACE LAUNCH 101
         </h5>
       </div>
-      <div className='xl:flex flex-row-reverse'>
-        {/* Image Element for Small and Medium Sizes Screen */}
+      <div className='xl:flex flex-row-reverse xl:justify-between'>
         <div className=' mb-[26px] h-[170px] md:h-[310px] flex justify-center border-b border-gray-600 md:mb-14 xl:hidden'>
           {data.length === 0 || info === undefined ? (
             <p> Image Loading... </p>
@@ -85,9 +84,9 @@ const Technology = () => {
             />
           )}
         </div>
-        <div className='xl:flex items-center'>
-          <ul className='flex justify-center mb-5 md:mb-11 xl:flex-col'>
-            <li className='px-2'>
+        <div className='xl:flex items-center xl:pl-40'>
+          <ul className='flex justify-center mb-5 md:mb-11 xl:flex-col xl:justify-around xl:mb-0 text-2xl'>
+            <li className='px-2 xl:py-5'>
               <button
                 id='0'
                 onClick={techHandler}
@@ -95,12 +94,12 @@ const Technology = () => {
                   id === 0
                     ? "bg-white text-black border-0"
                     : "bg-transparent text-white"
-                } text-2xl h-10 w-10 color-black rounded-full hover:border-gray-400 border-gray-700 border-solid border`}
+                }  h-10 w-10 color-black rounded-full hover:border-gray-400 border-gray-700 border-solid border xl:text-3xl xl:w-14 xl:h-14`}
               >
                 1
               </button>
             </li>
-            <li className='px-2'>
+            <li className='px-2 xl:py-5'>
               <button
                 id='1'
                 onClick={techHandler}
@@ -108,12 +107,12 @@ const Technology = () => {
                   id === 1
                     ? "bg-white text-black border-0"
                     : "bg-transparent text-white "
-                } text-2xl h-10 w-10 color-black rounded-full hover:border-gray-400 border-gray-700 border-solid border`}
+                } text-2xl h-10 w-10 color-black rounded-full hover:border-gray-400 border-gray-700 border-solid border xl:text-3xl xl:w-14 xl:h-14`}
               >
                 2
               </button>
             </li>
-            <li className='px-2'>
+            <li className='px-2 xl:py-5'>
               <button
                 id='2'
                 onClick={techHandler}
@@ -121,7 +120,7 @@ const Technology = () => {
                   id === 2
                     ? "bg-white text-black border-0"
                     : "bg-transparent text-white "
-                } text-2xl h-10 w-10 color-black rounded-full hover:border-gray-400 border-gray-700 border-solid border`}
+                } text-2xl h-10 w-10 color-black rounded-full hover:border-gray-400 border-gray-700 border-solid border xl:text-3xl xl:w-14 xl:h-14`}
               >
                 3
               </button>
@@ -130,14 +129,16 @@ const Technology = () => {
           {data.length === 0 || info === undefined ? (
             <p> Fetching Data... </p>
           ) : (
-            <div className='px-6 md:px-[155px] xl:pr-32 xl:pl-20 xl:text-left'>
+            <div className='px-6 md:px-[155px]  xl:pl-20 xl:text-left xl:w-[470px] xl:pr-0'>
               <p className='uppercase subheading2 mb-3 text-sm md:mb-6 md:text-lg'>
                 the technology...
               </p>
-              <h5 className='uppercase text-white subheading1 tracking-[-2px] mb-3 md:mb-6 md:text-4xl md:tracking-wider'>
+              <h5 className='uppercase text-white subheading1 tracking-[-2px] mb-3 md:mb-6 md:text-4xl md:tracking-wider xl:text-[2.6rem]'>
                 {info.name}
               </h5>
-              <p className='md:text-[17px] md:leading-8 '>{info.description}</p>
+              <p className='md:text-[17px] md:leading-8 xxl:text-lg'>
+                {info.description}
+              </p>
             </div>
           )}
         </div>

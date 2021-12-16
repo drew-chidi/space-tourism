@@ -56,7 +56,7 @@ const Crew = () => {
           <p className='mr-4 text-gray-500'>02</p> MEET YOUR CREW
         </h5>
       </div>
-      <div className='md:flex md:flex-col-reverse xl:pl-40 xl:pr-36 xl:flex-row-reverse xl:justify-center'>
+      <div className='md:flex md:flex-col-reverse xl:pl-40 xl:pr-36 xl:flex-row-reverse xl:justify-center xl:gap-8'>
         <div className='w-[327px] h-[223px] mx-auto mb-[26px] md:mb-0 flex justify-center border-b border-gray-600 md:border-0 md:w-[456px] md:h-[572px] xl:w-[568px] xxl:h-[712px] xl:mx-0 '>
           {data.length === 0 || info === undefined ? (
             <p> Image Loading... </p>
@@ -111,13 +111,13 @@ const Crew = () => {
             <p> Fetching Data </p>
           ) : (
             <div className='px-6 md:px-[155px] xl:px-0 xl:text-left'>
-              <p className='uppercase subheading1 text-gray-500 text-xl mb-2'>
+              <p className='uppercase subheading1 text-gray-400 text-xl xmb-2 xl:mb-4 xl:text-3xl'>
                 {info.role}
               </p>
-              <h5 className='uppercase text-white subheading1 tracking-[-2px] mb-3 md:tracking-wider '>
+              <h5 className='uppercase text-white subheading1 tracking-[-2px] mb-3 md:tracking-wider xl:text-[2.8rem] '>
                 {info.name}
               </h5>
-              <p className='md:mb-6 xl:w-[444px]'>{info.bio}</p>
+              <p className='md:mb-6 xl:w-[444px] xl:text-lg'>{info.bio}</p>
             </div>
           )}
         </div>
