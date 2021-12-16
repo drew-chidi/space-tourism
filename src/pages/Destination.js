@@ -52,7 +52,7 @@ const Destination = () => {
 
   return (
     <div className='pb-14 bgDMobile md:bgDTablet lg:bgDDesktop w-screen min-h-screen text-center md:pb-16'>
-      <nav className='mb-6 md:mb-10'>
+      <nav className='mb-6 md:mb-10 xl:mb-[76px]'>
         <Navbar id='1' />
       </nav>
       <div className='mb-8 md:mb-14 xl:mb-16'>

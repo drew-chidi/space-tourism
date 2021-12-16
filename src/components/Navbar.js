@@ -48,7 +48,7 @@ const Navbar = (props) => {
               !navMenu && "hidden md:flex"
             } z-[1] gradient-sm items-center h-screen w-[68.5%] pt-40 absolute top-0 right-0 text-white px-4 md:flex md:pt-0 md:h-24 md:w-auto md:gradient-md md:bg-gray-900 xl:px-36`}
           >
-            <li className='uppercase pr-6 flex pb-5 md:py-0 md:h-full'>
+            <li className='uppercase px-6 flex pb-5 md:py-0 md:h-full xl:pl-0'>
               <Link
                 to='/'
                 className={`${

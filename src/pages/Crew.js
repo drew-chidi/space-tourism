@@ -48,7 +48,7 @@ const Crew = () => {
 
   return (
     <div className='bgCMobile md:bgCTablet lg:bgCDesktop min-h-screen text-center pb-14 md:pb-0'>
-      <nav className='mb-6 md:mb-10'>
+      <nav className='mb-6 md:mb-10 xl:mb-[76px]'>
         <Navbar id='2' />
       </nav>
       <div className='mb-8 md:mb-14 xl:mb-16'>
