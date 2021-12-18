@@ -36,8 +36,8 @@ const Navbar = (props) => {
                 <button onClick={navMenuHandler} className='w-6'>
                   <img
                     src={close}
-                    alt='hamburger menu'
-                    className='max-w-full h-auto'
+                    alt='close'
+                    className='max-w-full h-auto fixed top-6 right-6'
                   />
                 </button>
               </div>
@@ -46,7 +46,7 @@ const Navbar = (props) => {
           <ul
             className={`${
               !navMenu && "hidden md:flex"
-            } z-[1] gradient-sm items-center h-screen w-[68.5%] pt-40 absolute top-0 right-0 text-white px-4 md:flex md:pt-0 md:h-24 md:w-auto md:gradient-md md:bg-gray-900 xl:px-36`}
+            } z-[1] gradient-sm items-center h-screen w-[68.5%] pt-40 fixed top-0 right-0 text-white px-4 md:flex md:pt-0 md:h-24 md:w-auto md:gradient-md md:bg-gray-900 xl:px-36`}
           >
             <li className='uppercase px-6 flex pb-5 md:py-0 md:h-full xl:pl-0'>
               <Link
