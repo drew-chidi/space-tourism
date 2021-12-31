@@ -3,11 +3,11 @@ import Navbar from "../components/Navbar";
 
 const Homepage = () => {
   return (
-    <div className='bgHomeMobile pb-12 md:pb-24 xs:min-h-screen md:bgHomeTablet xl:bgHomeDesktop xl:pb-32'>
-      <nav className='mb-16 md:mb-28 lg:mb-36 xxl:mb-[251px]'>
+    <div className='bgHomeMobile pb-12 md:pb-24 min-h-screen md:bgHomeTablet xl:bgHomeDesktop xl:pb-32'>
+      <nav role='navigation' className='mb-16 md:mb-28 lg:mb-36 xxl:mb-[251px]'>
         <Navbar id='0' />
       </nav>
-      <div className='xl:flex justify-start'>
+      <main role='main' className='xl:flex justify-start'>
         <div className='px-6 mt-16 mb-16 text-white text-center md:px-40 md:mb-[156px] xl:ml-[165px] xl:px-0 xl:w-[450px] '>
           <h5 className='mb-5 text-base tracking-[0.2em] md:tracking-[0.05em] md:text-lg xl:text-left xl:text-2xl'>
             SO, YOU WANT TO TRAVEL TO
@@ -28,7 +28,7 @@ const Homepage = () => {
             EXPLORE
           </button>
         </div>
-      </div>
+      </main>
     </div>
   );
 };

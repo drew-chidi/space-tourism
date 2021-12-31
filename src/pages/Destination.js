@@ -52,7 +52,7 @@ const Destination = () => {
 
   return (
     <div className='pb-14 bgDMobile md:bgDTablet lg:bgDDesktop w-screen min-h-screen text-center md:pb-16'>
-      <nav className='mb-6 md:mb-10 xl:mb-[76px]'>
+      <nav role='navigation' className='mb-6 md:mb-10 xl:mb-[76px]'>
         <Navbar id='1' />
       </nav>
       <div className='mb-8 md:mb-14 xl:mb-16'>
@@ -60,7 +60,7 @@ const Destination = () => {
           <p className='mr-4 text-gray-500'>01</p> PICK YOUR DESTINATION
         </h5>
       </div>
-      <div className='xl:flex xl:pl-56 xl:pr-40'>
+      <main role='main' className='xl:flex xl:pl-56 xl:pr-40'>
         <div className='w-[170px] h-[170px] mx-auto mb-[26px] md:mb-14 xl:w-[445px] xl:h-[445px] xl:mr-[157px] xxl:pt-8 '>
           {data.length === 0 || details === undefined ? (
             <p> Image Loading... </p>
@@ -154,7 +154,7 @@ const Destination = () => {
             </div>
           )}
         </div>
-      </div>
+      </main>
     </div>
   );
 };

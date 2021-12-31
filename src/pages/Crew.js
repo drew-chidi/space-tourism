@@ -48,7 +48,7 @@ const Crew = () => {
 
   return (
     <div className='bgCMobile md:bgCTablet lg:bgCDesktop min-h-screen text-center pb-14 md:pb-0'>
-      <nav className='mb-6 md:mb-10 xl:mb-[76px]'>
+      <nav role='navigation' className='mb-6 md:mb-10 xl:mb-[76px]'>
         <Navbar id='2' />
       </nav>
       <div className='mb-8 md:mb-14 xl:mb-16'>
@@ -56,7 +56,10 @@ const Crew = () => {
           <p className='mr-4 text-gray-500'>02</p> MEET YOUR CREW
         </h5>
       </div>
-      <div className='md:flex md:flex-col-reverse xl:pl-40 xl:pr-36 xl:flex-row-reverse xl:justify-center xl:gap-8'>
+      <main
+        role='main'
+        className='md:flex md:flex-col-reverse xl:pl-40 xl:pr-36 xl:flex-row-reverse xl:justify-center xl:gap-8'
+      >
         <div className='w-[327px] h-[223px] mx-auto mb-[26px] md:mb-0 flex justify-center border-b border-gray-600 md:border-0 md:w-[456px] md:h-[572px] xl:w-[568px] xxl:h-[712px] xl:mx-0 '>
           {data.length === 0 || info === undefined ? (
             <p> Image Loading... </p>
@@ -121,7 +124,7 @@ const Crew = () => {
             </div>
           )}
         </div>
-      </div>
+      </main>
     </div>
   );
 };
