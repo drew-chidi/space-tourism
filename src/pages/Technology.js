@@ -51,7 +51,7 @@ const Technology = () => {
 
   return (
     <div className='bgTMobile md:bgTTablet lg:bgTDesktop min-h-screen text-center pb-14 md:pb-24'>
-      <nav className='mb-6 md:mb-10 xl:mb-[76px]'>
+      <nav role='navigation' className='mb-6 md:mb-10 xl:mb-[76px]'>
         <Navbar id='3' />
       </nav>
       <div className='mb-8 md:mb-14 xl:mb-16'>
@@ -59,7 +59,7 @@ const Technology = () => {
           <p className='mr-4 text-gray-500'>03</p> SPACE LAUNCH 101
         </h5>
       </div>
-      <div className='xl:flex flex-row-reverse xl:justify-between'>
+      <main role='main' className='xl:flex flex-row-reverse xl:justify-between'>
         <div className=' mb-[26px] h-[170px] md:h-[310px] flex justify-center border-b border-gray-600 md:mb-14 xl:hidden'>
           {data.length === 0 || info === undefined ? (
             <p> Image Loading... </p>
@@ -142,7 +142,7 @@ const Technology = () => {
             </div>
           )}
         </div>
-      </div>
+      </main>
     </div>
   );
 };

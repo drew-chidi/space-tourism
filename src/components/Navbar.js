@@ -17,9 +17,9 @@ const Navbar = (props) => {
     <div>
       <div className='p-6 md:px-10'>
         <div className='flex justify-between items-center'>
-          <div className='w-10 h-10'>
+          <header role='banner' className='w-10 h-10'>
             <img src={logo} alt='logo' className='max-w-full h-auto' />
-          </div>
+          </header>
           <div className='md:hidden z-10'>
             {navMenu === false ? (
               <div className='z-50 my-auto'>
@@ -46,7 +46,7 @@ const Navbar = (props) => {
           <ul
             className={`${
               !navMenu && "hidden md:flex"
-            } z-[1] gradient-sm items-center h-screen w-[68.5%] pt-40 fixed top-0 right-0 text-white px-4 md:flex md:pt-0 md:h-24 md:w-auto md:gradient-md md:bg-gray-900 xl:px-36`}
+            } overflow-scroll md:overflow-hidden z-[1] gradient-sm items-center h-screen w-[68.5%] pt-40 fixed top-0 right-0 text-white px-4 md:flex md:pt-0 md:h-24 md:w-auto md:gradient-md md:bg-gray-900 xl:px-36`}
           >
             <li className='uppercase px-6 flex pb-5 md:py-0 md:h-full xl:pl-0'>
               <Link
